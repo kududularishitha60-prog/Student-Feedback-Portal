@@ -27,7 +27,7 @@ pipeline {
             steps {
                 bat 'docker stop student-feedback-app || exit /b 0'
                 bat 'docker rm student-feedback-app || exit /b 0'
-                bat 'docker run -d -p 8080:80 --name student-feedback-app student-feedback'
+                bat 'docker run -d -p 8081:80 --name student-feedback-app student-feedback'
             }
         }
 
